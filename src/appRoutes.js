@@ -11,7 +11,8 @@ const routes = [
       { index: true, element: <Home /> },
       { path: 'movie/:id', element: <MovieDetails /> },
       // … más rutas hijas
-    ]
+    ],
+    endOfLine: 'auto',
   },
   // aquí podrías tener un AuthLayout para `/login`, `/register`, etc.
 ];
