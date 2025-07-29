@@ -8,11 +8,10 @@ const routes = [
     path: '/',
     element: <MainLayout />,
     children: [
-      { index: true, element: <Home /> },
+      { index: true, element: <Home /> }, // <-- ruta raíz
       { path: 'movie/:id', element: <MovieDetails /> },
-      // … más rutas hijas
+      // … otras rutas hijas
     ],
-    endOfLine: 'auto',
   },
   // aquí podrías tener un AuthLayout para `/login`, `/register`, etc.
 ];
