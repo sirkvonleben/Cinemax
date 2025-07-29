@@ -1,24 +1,25 @@
+// src/components/MovieCard/MovieCard.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './MovieCard.module.css';
 import PropTypes from 'prop-types';
+import styles from './MovieCard.module.css';
 
-export default function MovieCard({ id, title, image }) {
+export default function MovieCard({ title, image, onClick }) {
   return (
-    <div className={styles.card}>
+    <div
+      className={styles.card}
+      onClick={onClick}
+      style={{ cursor: onClick ? 'pointer' : 'default' }}
+    >
       <img src={image} alt={title} className={styles.image} />
       <div className={styles.body}>
         <h5 className={styles.title}>{title}</h5>
-        <Link to={`/movie/${id}`} className={`btn btn-primary ${styles.button}`}>
-          Ver detalles
-        </Link>
       </div>
     </div>
   );
 }
 
 MovieCard.propTypes = {
-  id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
 };

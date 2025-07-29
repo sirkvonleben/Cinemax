@@ -1,9 +1,6 @@
-import './styles/App.module.css';
-import React, { Suspense } from 'react';
-import { useRoutes } from 'react-router-dom';
-import routes from './appRoutes';
+import React from 'react';
+import Home from './pages/Home/Home';
 
 export default function App() {
-  const routing = useRoutes(routes);
-  return <Suspense fallback={<div>Cargando…</div>}>{routing}</Suspense>;
+  return <Home />;
 }
