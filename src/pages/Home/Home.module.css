@@ -1,22 +1,29 @@
-/* src/pages/Home/Home.module.css */
-
 /* Estilos base para la página Home */
 .home {
   display: flex;
   flex-direction: column;
+  background-color: #1e1e24; /* Fondo oscuro */
+  color: #fff;
   /* Asegura que ocupe todo el alto disponible si es necesario */
   min-height: 100vh;
 }
 
 /* Sección genérica con padding superior e inferior */
 .section {
+  padding: 3rem 0;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.sectionHeading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #e63946; /* rojo CineMax */
+}
 
-/* Variante de sección clara (background claro) */
 .sectionLight {
-  background-color: #f8f9fa; /* equivale a Bootstrap "bg-light" */
+  background-color: #2a2a34; /* contraste suave */
 }
 
 /* Variante de sección oscura (background oscuro) */

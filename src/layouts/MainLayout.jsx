@@ -1,17 +1,16 @@
-console.log('MainLayout renderizado');
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/Footer/Footer'; // crea luego Footer.jsx
 
 export default function MainLayout() {
   return (
-    <div>
+    <>
       <Header />
-      <Suspense fallback={<div>Cargando…</div>}>
+      <main>
         <Outlet />
-      </Suspense>
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }

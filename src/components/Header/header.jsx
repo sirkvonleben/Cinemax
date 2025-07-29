@@ -1,5 +1,5 @@
-// src/components/Header/Header.jsx
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const navItems = [
   { label: 'En Cartelera', href: '#en-cartelera' },
@@ -10,7 +10,7 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           CineMax
@@ -19,25 +19,25 @@ export default function Header() {
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#nav"
+          aria-controls="nav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Toggle"
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse navbar-collapse" id="nav">
           <ul className="navbar-nav ms-auto">
-            {navItems.map((item) => (
-              <li key={item.href} className="nav-item">
-                <a className="nav-link" href={item.href}>
-                  {item.label}
+            {navItems.map((i) => (
+              <li className="nav-item" key={i.href}>
+                <a className="nav-link" href={i.href}>
+                  {i.label}
                 </a>
               </li>
             ))}
           </ul>
         </div>
       </div>
-    </header>
+    </nav>
   );
 }

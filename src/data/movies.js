@@ -21,5 +21,16 @@ export const movies = [
     trailerUrl: 'https://www.youtube.com/embed/VIDEO_ID2',
     isShowing: false,
   },
-  // …más objetos
+
+  {
+    id: 3,
+    title: 'Película 1',
+    genre: 'Acción',
+    synopsis: '…',
+    image: '/assets/film1.jpg',
+    releaseDate: '2025-07-01',
+    trailerUrl: 'https://…',
+    isShowing: true,
+  },
+  // …más
 ];

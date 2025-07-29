@@ -1,18 +1,15 @@
 import React from 'react';
-import styles from './HeroSection.module.css';
-import heroBg from '../../assets/hero-bg.jpg';
+import styles from './HeroSection.module.css'; // crea este CSS module
 
 export default function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay}>
         <h1 className={styles.title}>Bienvenido a CineMax</h1>
-        <p className={styles.subtitle}>
-          Descubre las películas más taquilleras y vive la experiencia única del cine
-        </p>
-        <a className={`btn btn-danger btn-lg ${styles.button}`}>Ver en Cartelera</a>
-        className={styles.hero}
-        style={{ backgroundImage: `url(${heroBg})` }}
+        <p className={styles.subtitle}>Vive la experiencia única del cine</p>
+        <a href="#en-cartelera" className={`btn btn-danger ${styles.button}`}>
+          Ver en Cartelera
+        </a>
       </div>
     </section>
   );

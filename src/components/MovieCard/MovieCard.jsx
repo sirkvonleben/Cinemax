@@ -13,6 +13,9 @@ export default function MovieCard({ title, image, onClick }) {
       <img src={image} alt={title} className={styles.image} />
       <div className={styles.body}>
         <h5 className={styles.title}>{title}</h5>
+        <div className={styles.buttonWrapper}>
+          <button className="btn btn-danger">Comprar Entradas</button>
+        </div>
       </div>
     </div>
   );
