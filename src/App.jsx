@@ -1,7 +1,6 @@
 import './styles/App.module.css';
 import React, { Suspense } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { useRoutes } from 'react-router-dom';
+import { BrowserRouter, useRoutes } from 'react-router-dom';
 import routes from './appRoutes';
 
 export default function App() {

@@ -1,6 +1,24 @@
 .footer {
-  text-align: center;
-  padding: 1rem;
-  background: var(--color-dark);
-  color: var(--color-light);
+  background-color: #212529;
+  color: #adb5bd;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.link {
+  color: #adb5bd;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.link:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
